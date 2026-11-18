@@ -1,0 +1,104 @@
+#FINAL
+    
+def introduction():
+    print("\n===== INTRODUCTION TO PROGRAMMING =====")
+    print("Programming is the process of giving")
+    print("instructions to a computer.")
+    print("\nPython is a popular programming language.")
+    print("It is easy to learn and beginner friendly.")
+
+    print("\nExample:")
+    print('print("Hello, World!")')
+    print("Output: Hello, World!")
+
+
+def basic_syntax():
+    print("\n===== BASIC SYNTAX =====")
+
+    print("\n1. PRINT STATEMENT")
+    print('print("Hello World")')
+
+    print("\n2. VARIABLES")
+    print('name = "Juan"')
+    print('age = 18')
+
+    print("\n3. DATA TYPES")
+    print("String: text")
+    print("Integer: whole numbers")
+    print("Float: decimal numbers")
+    print("Boolean: True or False")
+
+    print("\n4. USER INPUT")
+    print('name = input("Enter your name: ")')
+    print('print("Hello", name)')
+
+
+def arithmetic_operators():
+    print("\n===== ARITHMETIC OPERATORS =====")
+
+    print("\nAddition (+)")
+    print("10 + 5 =", 10 + 5)
+
+    print("\nSubtraction (-)")
+    print("10 - 5 =", 10 - 5)
+
+    print("\nMultiplication (*)")
+    print("10 * 5 =", 10 * 5)
+
+    print("\nDivision (/)")
+    print("10 / 5 =", 10 / 5)
+
+    print("\nModulus (%)")
+    print("10 % 3 =", 10 % 3)
+
+    print("\nExponent (**)")
+    print("2 ** 3 =", 2 ** 3)
+
+    print("\nFloor Division (//)")
+    print("10 // 3 =", 10 // 3)
+
+
+# ==========================================
+# MAIN MENU
+# ==========================================
+
+def main():
+
+    while True:
+        print("\n================================")
+        print("       PYTHON TUTORIAL")
+        print("================================")
+
+        print("1. Introduction to Programming")
+        print("2. Basic Syntax")
+        print("3. Arithmetic Operators")
+        print("4. Exit")
+
+        choice = input("\nChoose lesson: ")
+
+        if choice == "1":
+            introduction()
+
+        elif choice == "2":
+            basic_syntax()
+
+        elif choice == "3":
+            arithmetic_operators()
+
+        elif choice == "4":
+            question_and_answer()
+
+        elif choice == "5":
+            problem_solving()
+
+        elif choice == "6":
+            print("\nThank you for using Python Tutorial!")
+            print("Keep learning and keep practicing!")
+            break
+
+        else:
+            print("\nInvalid choice! Please select 1-6.")
+
+
+# RUN THE PROGRAM
+main()
